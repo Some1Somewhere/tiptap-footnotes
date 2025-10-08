@@ -143,6 +143,7 @@ const FootnoteReference = Node.create({
       {
         find: /\[\^(.*?)\]/,
         type: this.type,
+        undoable: true,
         handler({ range, match, chain }) {
           const start = range.from;
           let end = range.to;
