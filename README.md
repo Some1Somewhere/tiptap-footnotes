@@ -1,7 +1,13 @@
 # tiptap-footnotes
 
-NOTE : The parent repostiory has the tiptap-footnotes package within a folder, and when using gtihub links directly, that doesn't work. 
+NOTE : The parent repostiory has the tiptap-footnotes package within a folder, and when using gtihub links directly in package.json, that doesn't work. 
 So we use git filter-branch --subdirectory-filter package HEAD to make the history rewrite, and package folder the root. 
+
+This fork should be deleted and the original package should be used once https://github.com/buttondown/tiptap-footnotes/pull/22 is merged
+The PR uses v3, so that is not usable if we continue to use v2. 
+
+This fix uses v2, and just incorporates the fixes for moda issue not selecting the entire document
+#main-package-v2  has the moda fix and uses v3
 
 A footnotes extension for Tiptap
 
