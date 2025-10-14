@@ -1,5 +1,8 @@
 # tiptap-footnotes
 
+NOTE : The parent repostiory has the tiptap-footnotes package within a folder, and when using gtihub links directly, that doesn't work. 
+So we use git filter-branch --subdirectory-filter package HEAD to make the history rewrite, and package folder the root. 
+
 A footnotes extension for Tiptap
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)][demo]

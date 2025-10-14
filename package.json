@@ -9,6 +9,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "prepack": "pnpm run build",
+    "prepare": "pnpm run build",
     "test": "vitest --environment=jsdom"
   },
   "exports": {
