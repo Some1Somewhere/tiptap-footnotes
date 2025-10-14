@@ -8,8 +8,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "prepack": "pnpm run build",
-    "prepare": "pnpm run build",
+    "prepack": "npm run build",
+    "prepare": "npm run build",
     "test": "vitest --environment=jsdom"
   },
   "exports": {
