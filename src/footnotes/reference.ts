@@ -42,6 +42,7 @@ const FootnoteReference = Node.create({
 
           const id = anchor.getAttribute("data-id");
           const ref = anchor.getAttribute(REFNUM_ATTR);
+          console.error("🚨🚨🚨 FootnoteReference.parseHTML FIRED! 🚨🚨🚨", node);
 
           return {
             "data-id": id ?? uuid(),

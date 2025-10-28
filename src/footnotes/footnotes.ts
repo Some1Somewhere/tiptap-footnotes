@@ -1,5 +1,6 @@
 import OrderedList from "@tiptap/extension-ordered-list";
 import FootnoteRules from "./rules";
+import { Node } from "@tiptap/pm/model";
 
 const Footnotes = OrderedList.extend({
   name: "footnotes",
@@ -23,6 +24,10 @@ const Footnotes = OrderedList.extend({
       {
         tag: "ol.footnotes",
         priority: 1000,
+        getAttrs: (node : Node) => {
+          console.error("🚨🚨🚨 Footnotes.parseHTML FIRED! 🚨🚨🚨", node);
+          return null;
+        }
       },
     ];
   },

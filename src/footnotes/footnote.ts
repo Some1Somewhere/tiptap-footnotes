@@ -59,6 +59,7 @@ const Footnote = ListItem.extend<FootnoteOptions>({
         tag: "li",
         getAttrs(node) {
           const id = node.getAttribute("data-id");
+          console.error("🚨🚨🚨 Footnote.parseHTML FIRED! 🚨🚨🚨", node, ";id : ", id);
           if (id) {
             return {
               "data-id": node.getAttribute("data-id"),
